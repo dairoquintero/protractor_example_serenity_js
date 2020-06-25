@@ -45,6 +45,7 @@ exports.config = {
         require: [ 'features/**/*.ts', ],
         'require-module':   [ 'ts-node/register'],
         tags:    ['~@wip'],
+        'format': [ 'snippets:snippets.txt' ],
         strict:  false,
     },
 
@@ -64,7 +65,7 @@ exports.config = {
                 '--disable-extensions',
                 '--log-level=3',
                 '--disable-gpu',
-                '--window-size=1920,1080',
+                '--window-size=1366,768',
             ].concat(isCI ? ['--headless'] : [])    // run in headless mode on the CI server
         }
     }
